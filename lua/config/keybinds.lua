@@ -33,3 +33,12 @@ vim.keymap.set("i", "<C-S-Left>", "<C-o>vb")
 -- delete words with CTRL + Backspace
 vim.keymap.set("i", "<C-BS>", "<C-w>")
 vim.keymap.set("i", "<C-Del>", "<C-o>dw")
+
+-- Custom keybinds for commenting out
+vim.keymap.set("n", "<C-/>", "gcc", { remap = true })
+vim.keymap.set("x", "<C-/>", "gc", { remap = true })
+vim.keymap.set("i", "<C-/>", "<C-o>gcc", { remap = true })
+
+vim.keymap.set("n", "<C-_>", "gcc", { remap = true })
+vim.keymap.set("x", "<C-_>", "gc", { remap = true })
+vim.keymap.set("i", "<C-_>", "<C-o>gcc", { remap = true })
