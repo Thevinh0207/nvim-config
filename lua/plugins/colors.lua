@@ -11,10 +11,20 @@ return {
 			require("kanagawa").setup({
 				undercurl = true,
 				theme = "wave",
+				transparent = true,
+				colors = {
+					theme = {
+						all = {
+							ui = {
+								bg_gutter = "none",
+							},
+						},
+					},
+				},
 			})
-			vim.cmd.colorscheme "kanagawa"
+			vim.cmd.colorscheme("kanagawa")
 			enable_transparency()
-		end
+		end,
 	},
 	{
 		"nvim-lualine/lualine.nvim",
@@ -23,8 +33,8 @@ return {
 		},
 		opts = {
 			options = {
-				theme = 'kanagawa'
-			}
-		}
+				theme = "kanagawa",
+			},
+		},
 	},
 }

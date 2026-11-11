@@ -2,8 +2,7 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>cd", "<CMD>Oil<CR>")
 
 -- Clear highlights on search when pressing <Esc> in normal mode
-
-vim.keymap.set("n", "cl", "<cmd>nohlsearch<CR>", { desc = "Clear search highlight" })
+vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>", { desc = "Clear search highlight" })
 
 -- Move selec line with alt (same thing as VS rode)
 vim.keymap.set("n", "<A-Down>", ":m .+1<CR>==", { silent = true })
