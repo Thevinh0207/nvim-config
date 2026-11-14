@@ -41,3 +41,7 @@ vim.keymap.set("i", "<C-/>", "<C-o>gcc", { remap = true })
 vim.keymap.set("n", "<C-_>", "gcc", { remap = true })
 vim.keymap.set("x", "<C-_>", "gc", { remap = true })
 vim.keymap.set("i", "<C-_>", "<C-o>gcc", { remap = true })
+
+-- Saving / exiting with leader key
+vim.keymap.set("n", "<leader>w", "<CMD>wa<CR>")
+vim.keymap.set("n", "<leader>wq", "<CMD>wqa<CR>")
