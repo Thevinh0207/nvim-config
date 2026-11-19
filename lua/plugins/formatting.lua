@@ -21,6 +21,7 @@ return {
 				java = { "google-java-format" },
 				c = { "clang-format" },
 				cpp = { "clang-format" },
+				rust = { "rustfmt" },
 				cs = { "csharpier" },
 				sh = { "shfmt" },
 			},
